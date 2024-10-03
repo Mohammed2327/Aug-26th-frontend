@@ -1,0 +1,86 @@
+<html></html>
+<head>
+    <title>Nested Tables Example</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        table {
+            border: 1px solid black;
+            width: 90%;
+            height: 90%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .outer-table {
+            width: 100%;
+        }
+        .inner-table {
+            background-color: yellow;
+            width: 100%;
+            height: 100%;
+        }
+        .innermost-table {
+            width: 100%;
+            height: 100%;
+        }
+        .inner-data-cell {
+            background-color: #a9a9a9;
+        }
+        .inner-column-heading {
+            background-color: yellow;
+        }
+        .innermost-column-heading {
+            background-color: #ffcccb;
+        }
+        .innermost-data-cell {
+            background-color: #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using TABLES in Websites</h2>
+    <table class="outer-table">
+        <caption>Caption-Nested Table</caption>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td class="rowspan-cell" rowspan="3">Rowspan Cell</td>
+            <td>Colspan Column</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="inner-table">
+                    <tr>
+                        <th class="inner-column-heading">Inner Column Heading 1</th>
+                        <th class="inner-column-heading">Inner Column Heading 2</th>
+                    </tr>
+                    <tr>
+                        <td class="inner-data-cell">Inner Data Cell 1</td>
+                        <td>
+                            <table class="innermost-table">
+                                <tr>
+                                    <th class="innermost-column-heading">Inner Most Column Heading 1</th>
+                                    <th class="innermost-column-heading">Inner Most Column Heading 2</th>
+                                </tr>
+                                <tr>
+                                    <td class="innermost-data-cell">Innermost Data Cell 1</td>
+                                    <td class="innermost-data-cell">Innermost Data Cell 2</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #ge{
+            margin-left: -80px;
+        }
+        .gen {
+            
+        margin-bottom: 20px;
+        margin-left: 100px;
+        }
+        label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 70px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .gender-group label {
+            margin-right: 5px;
+        }
+        .gender-group input {
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 80px;
+            padding: 5px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .address-group {
+            display: flex;
+            align-items: flex-start;
+        }
+        .address-group label {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="nick-name">Nick Name</label>
+                <input type="text" id="nick-name" name="nick-name">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="gen">
+                <label id="ge">Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+            </div>
+            <div class="address-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" cols="30"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="mobile">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

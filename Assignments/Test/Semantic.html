@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family:  italic;
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: decimal;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 300px;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to my website!</h1>
+    <p>This is the home page of my website.</p>
+    
+    <h2>About Me</h2>
+    <p>My name is John Doe and I'm a web developer.</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <table>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+    
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <br>
+        
+        <input type="submit" value="Send">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza shop</title>
+  </head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 350px;
+      border: 2px solid black;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container h1 {
+      text-align: center;
+      font-size: 20px;
+      margin: 0;
+      padding: 5px 0;
+      border: 1px solid black;
+      margin-bottom: 2px;
+    }
+
+    .form {
+      margin-bottom: 10px;
+    }
+
+    .form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form input[type="text"],
+    .form select,
+    .form textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #000;
+    }
+    .form input[type="radio"],
+    .form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .form .options {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form .options label {
+      flex: 1;
+    }
+    .form .extras {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form .extras label {
+      flex: 1;
+    }
+    .form textarea {
+      height: 50px;
+    }
+    .form button {
+      width: 100%;
+      padding: 5px;
+      background-color: #ccc;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+       <h1>Pizza Shop 2.0</h1>
+      </table>
+
+     <div class="form">
+        <div class="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form">
+          <label>Pizza Topping</label>
+          <div class="options">
+            <label
+              ><input type="radio" name="topping" value="supreme" />
+              Supreme</label
+            >
+            <label
+              ><input type="radio" name="topping" value="vegetarian" />
+              Vegetarian</label
+            >
+            <label
+              ><input type="radio" name="topping" value="hawaiian" />
+              Hawaiian</label
+            >
+          </div>
+        </div>
+
+        <div class="form">
+          <label for="sauce">Pizza Sauce</label>
+          <select id="sauce" name="sauce">
+            <option value="tomato">Tomato</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <label> Optional Extras</label>
+          <div class="extras">
+            <label
+              ><input type="checkbox" name="extras" value="extra_cheese" />
+              Extra Cheese</label
+            >
+            <label
+              ><input type="checkbox" name="extras" value="gluten_free" />
+              Gluten Free Base</label
+            >
+          </div>
+        </div>
+
+        <div class="form">
+          <label for="instructions">Delivery Instructions:</label>
+          <textarea id="instructions" name="instructions"></textarea>
+        </div>
+       
+        <div class="form">
+          <button type="submit">Send my order</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

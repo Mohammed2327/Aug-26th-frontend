@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<style>
+
+    body{
+        font-family: italic;
+        /* background-color: aqua; */
+        margin-top: 20px;
+       
+    }
+
+    #del{
+        font-family: serif;
+        color: red;
+        margin-top: 0;
+        text-align: center;
+        
+    }
+
+    .container{
+        width: 20%;
+        margin:0 auto;
+        border: 2px solid red;
+        padding: 40px;
+        padding-top: 20px;
+    }
+
+    .form {
+        margin-bottom: 20px;
+      }
+
+</style>
+
+<body>
+    <h4 id="del"> Deleted </h4>
+
+    <div class="container">
+        <h1> HTML FORM</h1>
+
+        <form>
+            <div class="form">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+              <div class="form">
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" />
+              </div>
+
+              <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+              </div>
+              <div class="form">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div><br>
+
+          <div class="form">
+            <input type="submit" value="Submit" class="submit-btn" />
+            <input type="reset" value="Reset" class="reset-btn" />
+          </div>
+
+        </form>
+    </div>
+
+    
+</body>
+</html>

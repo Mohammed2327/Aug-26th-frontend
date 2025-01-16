@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=" http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title> User page </title>
+</head>
+
+<body>
+
+	<h1> Welcome to User Details </h1>
+	<div th:object="${user}">
+		<p> User Name: <strong th:text="*{name}"> </strong> </p>
+		<p> User Age: <strong th:text="*{age}"> </strong> </p>
+		<p> User Mail-ID: <strong th:text="*{mail}"> </strong> </p>
+		<p> User Role: <strong th:text="*{role}"> </strong> </p>
+
+	</div>
+</body>
+
+</html>

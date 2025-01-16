@@ -1,0 +1,9 @@
+package Variables;
+
+public class Alpha {
+public static void main(String[] args) {
+	for(char ch = 'A'; ch <= 'Z'; ch++) {
+		System.out.println("The char is " +ch);
+	}
+}
+}
